@@ -1,15 +1,23 @@
-// Ignore for testing purposes
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter_test/flutter_test.dart';
-import 'package:javerage_todos/app/app.dart';
-import 'package:javerage_todos/counter/counter.dart';
+import 'package:javerage_todos/core/app/app.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:todos_repository/todos_repository.dart';
+
+class MockTodosRepository extends Mock implements TodosRepository {}
 
 void main() {
   group('App', () {
-    testWidgets('renders CounterPage', (tester) async {
-      await tester.pumpWidget(App());
-      expect(find.byType(CounterPage), findsOneWidget);
+    late TodosRepository todosRepository;
+
+    setUp(() {
+      todosRepository = MockTodosRepository();
+    });
+
+    testWidgets('renders AppView', (tester) async {
+      await tester.pumpWidget(
+        App(todosRepository: todosRepository),
+      );
+      expect(find.byType(AppView), findsOneWidget);
     });
   });
 }

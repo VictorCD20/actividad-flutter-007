@@ -1,6 +1,6 @@
-import 'package:javerage_todos/app/app.dart';
-import 'package:javerage_todos/bootstrap.dart';
+import 'package:javerage_todos/core/app/app.dart';
+import 'package:javerage_todos/core/bootstrap.dart';
 
 Future<void> main() async {
-  await bootstrap(() => const App());
+  await bootstrap((todosRepository) => App(todosRepository: todosRepository));
 }

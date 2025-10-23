@@ -1,7 +1,112 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+    "todosOverviewAppBarTitle": "Flutter Todos",
+    "@todosOverviewAppBarTitle": {
+        "description": "Texto del título mostrado en la AppBar de la página de vista general de tareas"
+    },
+    "todosOverviewFilterTooltip": "Filtrar",
+    "@todosOverviewFilterTooltip": {
+        "description": "Texto del tooltip mostrado en el menú desplegable de filtrado de la página de vista general de tareas"
+    },
+    "todosOverviewFilterAll": "Todas",
+    "@todosOverviewFilterAll": {
+        "description": "Texto mostrado en el menú desplegable de filtrado de la página de vista general de tareas para la opción que muestra todas las tareas"
+    },
+    "todosOverviewFilterActiveOnly": "Solo activas",
+    "@todosOverviewFilterActiveOnly": {
+        "description": "Texto mostrado en el menú desplegable de filtrado de la página de vista general de tareas para la opción que muestra solo las tareas activas"
+    },
+    "todosOverviewFilterCompletedOnly": "Solo completadas",
+    "@todosOverviewFilterCompletedOnly": {
+        "description": "Texto mostrado en el menú desplegable de filtrado de la página de vista general de tareas para la opción que muestra solo las tareas completadas"
+    },
+    "todosOverviewMarkAllCompleteButtonText": "Marcar todas como completadas",
+    "@todosOverviewMarkAllCompleteButtonText": {
+        "description": "Texto del botón mostrado en el menú de opciones de la página de vista general de tareas que marca todas las tareas actuales como completadas"
+    },
+    "todosOverviewClearCompletedButtonText": "Eliminar completadas",
+    "@todosOverviewClearCompletedButtonText": {
+        "description": "Texto del botón mostrado en el menú de opciones de la página de vista general de tareas que elimina todas las tareas completadas"
+    },
+    "todosOverviewEmptyText": "No se encontraron tareas con los filtros seleccionados.",
+    "@todosOverviewEmptyText": {
+        "description": "Texto mostrado en la página de vista general de tareas cuando no se encuentran tareas con los filtros seleccionados"
+    },
+    "todosOverviewTodoDeletedSnackbarText": "Tarea \"{todoTitle}\" eliminada.",
+    "@todosOverviewTodoDeletedSnackbarText": {
+        "description": "Texto del snackbar mostrado cuando se elimina una tarea desde la página de vista general de tareas",
+        "placeholders": {
+            "todoTitle": {
+                "description": "El título de la tarea que fue eliminada"
+            }
+        }
+    },
+    "todosOverviewUndoDeletionButtonText": "Deshacer",
+    "@todosOverviewUndoDeletionButtonText": {
+        "description": "Texto del botón mostrado en el snackbar que deshace la eliminación de una tarea"
+    },
+    "todosOverviewErrorSnackbarText": "Ocurrió un error al cargar las tareas.",
+    "@todosOverviewErrorSnackbarText": {
+        "description": "Texto del snackbar mostrado cuando ocurre un error al cargar las tareas"
+    },
+    "todosOverviewOptionsTooltip": "Opciones",
+    "@todosOverviewOptionsTooltip": {
+        "description": "Texto del tooltip mostrado en el menú desplegable de opciones de la página de vista general de tareas"
+    },
+    "todosOverviewOptionsMarkAllComplete": "Marcar todas como completadas",
+    "@todosOverviewOptionsMarkAllComplete": {
+        "description": "Texto del botón mostrado en el menú de opciones de la página de vista general de tareas que marca todas las tareas como completadas"
+    },
+    "todosOverviewOptionsMarkAllIncomplete": "Marcar todas como incompletas",
+    "@todosOverviewOptionsMarkAllIncomplete": {
+        "description": "Texto del botón mostrado en el menú de opciones de la página de vista general de tareas que marca todas las tareas como incompletas"
+    },
+    "todosOverviewOptionsClearCompleted": "Eliminar completadas",
+    "@todosOverviewOptionsClearCompleted": {
+        "description": "Texto del botón mostrado en el menú de opciones de la página de vista general de tareas que elimina todas las tareas completadas"
+    },
+    "todoDetailsAppBarTitle": "Detalles de la tarea",
+    "@todoDetailsAppBarTitle": {
+        "description": "Texto del título mostrado en la AppBar de la página de detalles de una tarea"
+    },
+    "todoDetailsDeleteButtonTooltip": "Eliminar",
+    "@todoDetailsDeleteButtonTooltip": {
+        "description": "Texto del tooltip mostrado en el botón de eliminar en la página de detalles de una tarea"
+    },
+    "todoDetailsEditButtonTooltip": "Editar",
+    "@todoDetailsEditButtonTooltip": {
+        "description": "Texto del tooltip mostrado en el botón de editar en la página de detalles de una tarea"
+    },
+    "editTodoEditAppBarTitle": "Editar tarea",
+    "@editTodoEditAppBarTitle": {
+        "description": "Texto del título mostrado en la AppBar de la página de edición de una tarea al editar una tarea existente"
+    },
+    "editTodoAddAppBarTitle": "Agregar tarea",
+    "@editTodoAddAppBarTitle": {
+        "description": "Texto del título mostrado en la AppBar de la página de edición de una tarea al agregar una nueva tarea"
+    },
+    "editTodoTitleLabel": "Título",
+    "@editTodoTitleLabel": {
+        "description": "Texto de la etiqueta mostrado en el campo de entrada del título en la página de edición de una tarea"
+    },
+    "editTodoDescriptionLabel": "Descripción",
+    "@editTodoDescriptionLabel": {
+        "description": "Texto de la etiqueta mostrado en el campo de entrada de la descripción en la página de edición de una tarea"
+    },
+    "editTodoSaveButtonTooltip": "Guardar cambios",
+    "@editTodoSaveButtonTooltip": {
+        "description": "Texto del tooltip mostrado en el botón de guardar en la página de edición de una tarea"
+    },
+    "statsAppBarTitle": "Estadísticas",
+    "@statsAppBarTitle": {
+        "description": "Texto del título mostrado en la AppBar de la página de estadísticas"
+    },
+    "statsCompletedTodoCountLabel": "Tareas completadas",
+    "@statsCompletedTodoCountLabel": {
+        "description": "Texto de la etiqueta mostrado en la sección del recuento de tareas completadas en la página de estadísticas"
+    },
+    "statsActiveTodoCountLabel": "Tareas activas",
+    "@statsActiveTodoCountLabel": {
+        "description": "Texto de la etiqueta mostrado en la sección del recuento de tareas activas en la página de estadísticas"
     }
 }

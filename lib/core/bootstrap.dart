@@ -3,6 +3,9 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
+import 'package:local_storage_todos_api/local_storage_todos_api.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:todos_repository/todos_repository.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -20,14 +23,19 @@ class AppBlocObserver extends BlocObserver {
   }
 }
 
-Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+Future<void> bootstrap(FutureOr<Widget> Function(TodosRepository) builder) async {
+  WidgetsFlutterBinding.ensureInitialized();
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
   Bloc.observer = const AppBlocObserver();
 
-  // Add cross-flavor configuration here
+  final todosApi = LocalStorageTodosApi(
+    plugin: await SharedPreferences.getInstance(),
+  );
 
-  runApp(await builder());
+  final todosRepository = TodosRepository(todosApi: todosApi);
+
+  runApp(await builder(todosRepository));
 }
