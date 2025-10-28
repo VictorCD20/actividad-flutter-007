@@ -11,6 +11,7 @@ void main() {
 
     setUp(() {
       todosRepository = MockTodosRepository();
+      when(() => todosRepository.getTodos()).thenAnswer((_) => const Stream.empty());
     });
 
     testWidgets('renders AppView', (tester) async {

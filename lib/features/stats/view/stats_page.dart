@@ -28,9 +28,6 @@ class StatsView extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(l10n.statsAppBarTitle),
-      ),
       body: Column(
         children: [
           ListTile(
